@@ -15,12 +15,13 @@ import org.springframework.ai.vectorstore.SimpleVectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.Resource;
 
 
 @Configuration
 public class RagConfiguration {
-    // Your configuration code ...
+
     private static final Logger log = LoggerFactory.getLogger(RagConfiguration.class);
 
     @Value("classpath:/docs/olympic-faq.txt")
