@@ -50,7 +50,7 @@ public class RagConfiguration {
     }
 
     private File getVectorStoreFile() {
-      Path path =  Paths.get("src", "main", "resources", "Data");
+    Path path = Paths.get("src", "main", "resources", "Data");
         String absolutePath = path.toFile().getAbsolutePath() + "/" + vectorStoreName;
         return new File(absolutePath);
     }
